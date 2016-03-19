@@ -1,0 +1,307 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300);
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-family: Quicksand, sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: auto 0;
+}
+
+header {
+  display:block;
+  background-color: #db7d69;
+  border-bottom: 1px solid #708090;
+  padding: 10px 0 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+hr {
+  margin: 50px 0 50px 0;
+  color: #708090;
+}
+
+.logo {
+  font-family: Quicksand;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  padding-left: 30px;
+  margin: 10px 0 -30px 0 ;
+  text-decoration: none;
+}
+
+#topnav {
+    font-family: Quicksand;
+    padding-bottom: 30px;
+    list-style: none;
+    color:white;
+    font-size: 16px;
+    font-weight: 800;
+    z-index: 150;
+}
+
+header nav ul{
+  float: right;
+  list-style: none;
+  overflow: hidden;
+  text-decoration: none;
+  height: 35px;
+  margin: 0;
+}
+
+header nav li {
+  float: left;
+  padding-right: 40px;
+}
+
+header nav li a {
+  height: 35px;
+}
+
+header nav li a:hover {
+  font-size: 18px;
+}
+
+
+header,
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  opacity: 0.9;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+#slider {
+  clear:both;
+  height: 600px;
+  background-image: url(../img/beach.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+#aboutMe {
+  background: #f7f7f7;
+  height: 440px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h3 {
+  height: 50px;
+  width: 1210px;
+  color: white;
+  font-size: 30px;
+  margin:10px 70px;
+  padding-top: 5px;
+}
+
+.aboutMeImage {
+  float: left;
+  margin: 20px 40px 20px 20px;
+}
+
+.columns{
+  float: left;
+  width: 350px;
+  padding-left: 20px;
+}
+
+#aboutMeText p {
+  padding-right: 20px;
+}
+
+.imageGallery {
+  clear:both;
+  background: #f7f7f7;
+  height: 700px;
+}
+
+.locationMenu {
+  height: 50px;
+  margin:0 20px 0 20px;
+  font-family: QuickSand;
+  font-size: 300;
+  font-style: italic;
+  background: #f7f7f7;
+  height: 400px;
+}
+h3:hover {
+  height: 100px;
+
+}
+#asia {
+  background-image: url(../img/Asia/boracay.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center; 
+}
+
+#europe {
+  background-image: url(../img/Europe/chiswick.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center; 
+}
+
+#america {
+  background-image: url(../img/America/timesquare.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center; 
+}
+
+.expandedImageGallery a{
+  display: block;
+  padding: 50px 20px;
+  float: left;
+}
+.expandedImageGallery a:hover{
+  border: 1px solid #708090;
+  padding:10px;
+}
+
+#contact {
+  text-align: center;
+  height: 480px;
+  background: #f7f7f7;
+  }
+
+form input {
+  width:300px;
+  text-align: center;
+  border: 1px solid grey;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  color: grey;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+input[type=text]:hover {
+    width: 350px;
+}
+
+.button {
+    background-color: #db7d69;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: Quicksand;
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 300px;
+}
+
+.bottomnav {
+  clear:both;
+  list-style: none;
+}
+
+footer {
+  display:block;
+  background-color: #708090;
+  height: 100px;
+  line-height: -1.5px;
+}
+
+footer nav ul{
+  float: right;
+  list-style: none;
+  text-decoration: none;
+}
+
+footer nav li {
+  float:left;
+  padding-right:40px;
+  display: inline-block;
+}
+
+.footerLogo h4 {
+  clear:left;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-top: 40px;
+  line-height: 1.5px;
+  margin-bottom: 0;
+
+}
+
+/*  width: 200px;
+  background: yellow;
+}
+
+.toprightbox {
+ 
+}
+.bottomrightbox {
+  
+}
+/******************************************/
+/* LAYOUT
+/*******************************************/
+
+
+
+
+
+
+
